@@ -1,0 +1,176 @@
+html, body, div, input, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+@font-face {
+    font-family: 'IRANSans-web';
+    src: url('../fonts/IRANSans-Bold.eot?#') format('eot'), /* IE6–8 */ url('../fonts/IRANSans-Bold.woff2') format('woff2'), /* Chrome36+, Opera24+*/ url('../fonts/IRANSans-Bold.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'IRANSans-web';
+    src: url('../fonts/IRANSANSExpanded.eot?#') format('eot'), /* IE6–8 */ url('../fonts/IRANSANSExpanded.woff2') format('woff2'), /* Chrome36+, Opera24+*/ url('../fonts/IRANSANSExpanded.woff') format('woff');  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    font-weight: normal;
+}
+
+body {
+    direction: rtl;
+    background: #ecf0f1;
+    font: 12px Tahoma;
+}
+
+.container {
+    background: #fff;
+    width: 960px;
+    margin: auto;
+}
+
+.top-menu {
+    background: #3d3d3d;
+}
+
+.top-menu ul {
+    list-style: none;
+}
+
+.top-menu ul li {
+    float: right;
+    margin: 6px;
+    padding: 6px;
+
+}
+
+.top-menu ul li:hover {
+    background: #252525;
+    border-radius: 3px;
+}
+
+.top-menu ul li a {
+    color: #e1e5e6;
+    text-decoration: none;
+}
+
+.socials {
+    float: left;
+    color: #fff;
+    padding: 6px 12px;
+    margin: 6px 8px;
+    font-size: 15px;
+    border-radius: 3px
+}
+
+.socials a {
+    color: #fff
+}
+
+.facebook:hover {
+    background-color: #3b5998;
+
+}
+
+.twitter:hover {
+    background-color: #55acee;
+
+}
+
+.pinterest:hover {
+    background-color: #bd081c;
+
+}
+
+.clear {
+    clear: both;
+}
+
+.logo {
+    margin: 10px;
+    width: 217px;
+    float: right;
+}
+
+.logo img {
+    float: right;
+    margin: 0 0 0 10px
+}
+
+.logo h1 {
+    font: bold 18px IRANSans-web;
+}
+
+.logo h3 {
+    font: 14px IRANSans-web;
+    color: #555555;
+    float: left;
+}
+
+.main-menu {
+    float: left;
+}
+
+.main-menu ul {
+    list-style: none;
+}
+
+.main-menu ul li {
+    float: right;
+    position: relative;
+}
+
+.main-menu ul li:hover {
+    background-color: #ecf0f1;
+    box-shadow:inset 0 -4px 0 0 #e74c3c;
+}
+
+.main-menu ul li a {
+    text-decoration: none;
+    font: bold 18px IRANSans-web;
+    color: #000;
+    padding: 24px 15px;
+    display: block;
+}
+
+.main-menu ul li ul {
+    /*display: none;*/
+    position: absolute;
+    background: #e74c3c;
+    width: 340px;
+    top: 83px;
+    right: 0;
+}
+
+.main-menu ul li ul li {
+    margin: 5px 5px;
+    width: 160px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+.main-menu ul li ul {
+    display: block;
+}
+
+.main-menu ul li:hover ul {
+    display: block;
+}
+
+.main-menu ul li ul li a {
+    color: #fff;
+    font-size: 14px;
+    border-radius: 34px;
+    padding: 5px;
+    display: inline;
+}
+
+.main-menu ul li ul li:hover {
+    background-color: #fff;
+}
+
+.main-menu ul li ul li:hover a {
+    color: #e74c3c;
+}
