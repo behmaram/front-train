@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        .display-container {
+            position: relative;
+        }
+
+        .mySlides {
+            position: absolute;
+        }
+
+        .container {
+            padding: 0.01em 16px;
+        }
+
+        .badge {
+            cursor: pointer;
+            background-color: #000;
+            color: #fff;
+            display: inline-block;
+            padding-left: 8px;
+            padding-right: 8px;
+            text-align: center;
+            border-radius: 50%;
+
+        }
+
+        .badge {
+            height: 13px;
+            width: 13px;
+            padding: 0;
+        }
+
+        .border {
+            border: 1px solid #ccc !important;
+        }
+
+        .transparent, .hover-none:hover {
+            background-color: transparent !important;
+        }
+
+        .hover-white:hover {
+            color: #000 !important;
+            background-color: rebeccapurple !important;
+        }
+
+        .right {
+            float: right;
+        }
+
+        .right:hover {
+            color: #3F3F3F;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .left:hover {
+            color: #a8e4ff;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container display-container" style="max-width:800px">
+    <div class="left hover-text-khaki"> ❮</div>
+    <div class="right hover-text-khaki"> ❯</div>
+    <span class="badge demo border transparent hover-white" onclick="display()"></span>
+    <span class="badge demo border transparent hover-white"></span>
+    <span class="badge demo border transparent hover-white"></span>
+    <img id="img1" class="mySlides" src="images/1630826893.jpg"  style="width:100%">
+    <img id="img2" class="mySlides" src="images/1630833133.jpg" style="width:100%">
+    <img id="img3" class="mySlides" src="images/1630834093.jpg" style="width:100%">
+</div>
+
+<script>
+
+
+    function display() {
+        let img1 = document.getElementById("img1");
+        img1.setAttribute('style', 'display:none;');
+    }
+
+</script>
+
+</body>
+<!--browser-sync start &#45;&#45;server &#45;&#45;directory &#45;&#45;files "*"-->
+</html>
+
