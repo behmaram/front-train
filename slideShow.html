@@ -65,19 +65,28 @@
         }
 
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
-<div class="container display-container" style="max-width:800px">
-    <div class="left hover-text-khaki"> ❮</div>
-    <div class="right hover-text-khaki"> ❯</div>
-    <span class="badge demo border transparent hover-white" onclick="display()"></span>
-    <span class="badge demo border transparent hover-white"></span>
-    <span class="badge demo border transparent hover-white"></span>
-    <img id="img1" class="mySlides" src="images/1630826893.jpg"  style="width:100%">
-    <img id="img2" class="mySlides" src="images/1630833133.jpg" style="width:100%">
-    <img id="img3" class="mySlides" src="images/1630834093.jpg" style="width:100%">
-</div>
+<!--<div class="container display-container" style="max-width:800px">-->
+<!--    <div class="left hover-text-khaki"> ❮</div>-->
+<!--    <div class="right hover-text-khaki"> ❯</div>-->
+<!--    <span class="badge demo border transparent hover-white" onclick="display()"></span>-->
+<!--    <span class="badge demo border transparent hover-white"></span>-->
+<!--    <span class="badge demo border transparent hover-white"></span>-->
+<!--    <img id="img1" class="mySlides" src="images/1630826893.jpg"  style="width:100%">-->
+<!--    <img id="img2" class="mySlides" src="images/1630833133.jpg" style="width:100%">-->
+<!--    <img id="img3" class="mySlides" src="images/1630834093.jpg" style="width:100%">-->
+<!--</div>-->
 
+
+<p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+
+<button>Change href Value</button>
+
+<p>Mouse over the link (or click on it) to see that the value of the href attribute has changed.</p>
+</body>
 <script>
 
 
@@ -86,9 +95,14 @@
         img1.setAttribute('style', 'display:none;');
     }
 
-</script>
+    $(document).ready(function () {
+        $("button").click(function () {
+            console.log($("#w3s").attr('href', "https://www.w3schools.com/jquery/"));
+            $("#w3s").attr("href", "https://www.w3schools.com/jquery/");
+        });
+    });
 
-</body>
+</script>
 <!--browser-sync start &#45;&#45;server &#45;&#45;directory &#45;&#45;files "*"-->
 </html>
 
