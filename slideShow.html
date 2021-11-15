@@ -7,20 +7,28 @@
 
         .container {
             position: relative;
+            background-color: #e1efe873;
+            height: 400px;
+            width: 900px;
+            margin: auto;
             text-align: center;
-            height: 500px;
-            width: 700px;
         }
 
         .mySlides {
             position: absolute;
             width: 100%;
+            left: 0;
             height: 100%;
-            bottom: 0;
+        }
+
+        .circle {
+            position: absolute;
+            width: 100%;
+            bottom: -22px;
+
         }
 
         .badge {
-            position: absolute;
             cursor: pointer;
             background-color: #000;
             color: #fff;
@@ -51,37 +59,50 @@
             background-color: rebeccapurple !important;
         }
 
-        .right {
+        .pointer {
             position: absolute;
+            width: 100%;
+            float: right;
+        }
+
+        .right {
             right: 0;
         }
 
         .right:hover {
-            color: #3F3F3F;
+            color: #E4F3F0;
         }
 
         .left {
-            position: absolute;
             left: 0;
         }
 
         .left:hover {
-            color: #a8e4ff;
+            color: #E4F3F0;
         }
 
     </style>
 
 </head>
 <body>
-<div class="container" style="max-width:800px">
-    <div class="left"> ❮ </div>
-    <div class="right"> ❯ </div>
-    <span class="badge border transparent hover-white" onclick="display()"></span>
-    <span class="badge border transparent hover-white"></span>
-    <span class="badge border transparent hover-white"></span>
+<!--<div class="container">-->
+<!--    sdfd-->
+<!--</div>-->
+<div class="container">
+
+    <div class="pointer">
+        <div class="left"> ❮ </div>
+        <div class="right"> ❯ </div>
+    </div>
+
     <img id="img2" class="mySlides" src="images/1630833133.jpg">
     <img id="img1" class="mySlides" src="images/1630826893.jpg" >
     <img id="img3" class="mySlides" src="images/1630834093.jpg">
+    <div class="circle">
+        <span class="badge border transparent hover-white" onclick="display()"></span>
+        <span class="badge border transparent hover-white"></span>
+        <span class="badge border transparent hover-white"></span>
+    </div>
 </div>
 
 
