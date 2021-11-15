@@ -5,19 +5,22 @@
     <title>Title</title>
     <style>
 
-        .display-container {
+        .container {
             position: relative;
+            text-align: center;
+            height: 500px;
+            width: 700px;
         }
 
         .mySlides {
             position: absolute;
-        }
-
-        .container {
-            padding: 0.01em 16px;
+            width: 100%;
+            height: 100%;
+            bottom: 0;
         }
 
         .badge {
+            position: absolute;
             cursor: pointer;
             background-color: #000;
             color: #fff;
@@ -49,7 +52,8 @@
         }
 
         .right {
-            float: right;
+            position: absolute;
+            right: 0;
         }
 
         .right:hover {
@@ -57,7 +61,8 @@
         }
 
         .left {
-            float: left;
+            position: absolute;
+            left: 0;
         }
 
         .left:hover {
@@ -65,42 +70,28 @@
         }
 
     </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 </head>
 <body>
-<!--<div class="container display-container" style="max-width:800px">-->
-<!--    <div class="left hover-text-khaki"> ❮</div>-->
-<!--    <div class="right hover-text-khaki"> ❯</div>-->
-<!--    <span class="badge demo border transparent hover-white" onclick="display()"></span>-->
-<!--    <span class="badge demo border transparent hover-white"></span>-->
-<!--    <span class="badge demo border transparent hover-white"></span>-->
-<!--    <img id="img1" class="mySlides" src="images/1630826893.jpg"  style="width:100%">-->
-<!--    <img id="img2" class="mySlides" src="images/1630833133.jpg" style="width:100%">-->
-<!--    <img id="img3" class="mySlides" src="images/1630834093.jpg" style="width:100%">-->
-<!--</div>-->
+<div class="container" style="max-width:800px">
+    <div class="left"> ❮ </div>
+    <div class="right"> ❯ </div>
+    <span class="badge border transparent hover-white" onclick="display()"></span>
+    <span class="badge border transparent hover-white"></span>
+    <span class="badge border transparent hover-white"></span>
+    <img id="img2" class="mySlides" src="images/1630833133.jpg">
+    <img id="img1" class="mySlides" src="images/1630826893.jpg" >
+    <img id="img3" class="mySlides" src="images/1630834093.jpg">
+</div>
 
 
-<p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
-
-<button>Change href Value</button>
-
-<p>Mouse over the link (or click on it) to see that the value of the href attribute has changed.</p>
 </body>
 <script>
-
 
     function display() {
         let img1 = document.getElementById("img1");
         img1.setAttribute('style', 'display:none;');
     }
-
-    $(document).ready(function () {
-        $("button").click(function () {
-            console.log($("#w3s").attr('href', "https://www.w3schools.com/jquery/"));
-            $("#w3s").attr("href", "https://www.w3schools.com/jquery/");
-        });
-    });
 
 </script>
 <!--browser-sync start &#45;&#45;server &#45;&#45;directory &#45;&#45;files "*"-->
