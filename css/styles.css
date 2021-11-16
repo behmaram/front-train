@@ -174,3 +174,40 @@ body {
 .main-menu ul li ul li:hover a {
     color: #e74c3c;
 }
+
+.slide-box {
+    position: relative;
+}
+
+.slide-box h2, .slide-box h3, .slide-box a {
+    position: absolute;
+}
+
+.slide-box h2 {
+    font: bold 18px IRANSans-web;
+    color: #fff;
+    right: 50px;
+    top: 50px;
+}
+
+.slide-box h3 {
+    font: 14px IRANSans-web;
+    color: #fff;
+    right: 210px;
+    top: 95px;
+}
+
+.slide-box a {
+    font: 14px IRANSans-web;
+    text-decoration: none;
+    color: #fff;
+    border: 3px solid #fff;
+    top: 80px;
+    left: 130px;
+    padding: 5px;
+}
+
+.slide-box a:hover {
+    color: #630429;
+    background-color: #fff;
+}
