@@ -152,7 +152,7 @@ body {
 }
 
 .main-menu ul li ul {
-    display: block;
+    display: none;
 }
 
 .main-menu ul li:hover ul {

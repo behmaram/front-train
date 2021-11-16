@@ -13,7 +13,7 @@
 		margin:0 auto;
 		position:relative;
 		text-align:left;
-		width:696px;
+		width:960px;
 		background:#fff;		
 		margin-bottom:2em;
 		direction:ltr
@@ -42,33 +42,33 @@
 			define width and height of list item (slide)
 			entire slider area will adjust according to the parameters provided here
 		*/ 
-		width:696px;
-		height:241px;
+		width:960px;
+		height:198px;
 		overflow:hidden; 
 		}	
 	#prevBtn, #nextBtn,
 	#slider1next, #slider1prev{ 
 		display:block;
-		width:30px;
-		height:77px;
+		width:11px;
+		height:17px;
 		position:absolute;
-		left:-30px;
-		top:71px;
+		left:15px;
+		top:90px;
 		z-index:1000;
 		}	
 	#nextBtn, #slider1next{ 
-		left:696px;
+		left:935px;
 		}														
 	#prevBtn a, #nextBtn a,
 	#slider1next a, #slider1prev a{  
 		display:block;
 		position:relative;
-		width:30px;
-		height:77px;
-		background:url(../images/btn_prev.gif) no-repeat 0 0;	
+		width:11px;
+		height:17px;
+		background:url(../images/arrow_left.png) no-repeat 0 0;
 		}	
 	#nextBtn a, #slider1next a{ 
-		background:url(../images/btn_next.gif) no-repeat 0 0;	
+		background:url(../images/arrow_right.png) no-repeat 0 0;
 		}	
 		
 	/* numeric controls */	
