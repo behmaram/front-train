@@ -124,7 +124,7 @@ body {
 
 .main-menu ul li:hover {
     background-color: #ecf0f1;
-    box-shadow:inset 0 -4px 0 0 #e74c3c;
+    box-shadow: inset 0 -4px 0 0 #e74c3c;
 }
 
 .main-menu ul li a {
@@ -157,6 +157,7 @@ body {
 
 .main-menu ul li:hover ul {
     display: block;
+    /*left: 0;*/
 }
 
 .main-menu ul li ul li a {
@@ -210,4 +211,56 @@ body {
 .slide-box a:hover {
     color: #630429;
     background-color: #fff;
+}
+
+.service-box {
+    width: 215px;
+    padding: 25px 10px;
+    text-align: center;
+    float: right;
+}
+
+.icon-bar {
+    color: #e74c3c;
+    font-size: 70px;
+
+}
+
+.service-box:hover .icon-bar {
+    color: #0462ff;
+}
+
+.service-box h3 {
+    font: bold 18px IRANSans-web;
+}
+
+.service-box p {
+    font: 11px IRANSans-web;
+    height: 100px;
+    width: 170px;
+    margin: auto;
+    text-align: justify;
+    overflow: hidden;
+    line-height: 25px;
+}
+
+.portfolio {
+    text-align: center;
+}
+.portfolio h3{
+    font:bold 14px IRANSans-web;
+}
+
+.portfolio ul {
+    list-style: none;
+
+}
+
+.portfolio li {
+    float: right;
+}
+
+.portfolio ul li a {
+    text-decoration: none;
+    font: 13px IRANSans-web;
 }
