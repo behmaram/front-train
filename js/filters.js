@@ -14,8 +14,8 @@
 				element: 'a',
 				active: 'active'
 			},
-			container: {
-				name: 'container',
+			containers: {
+				name: 'containers',
 				element: 'li'
 			},
 			css3: {
@@ -44,7 +44,7 @@
         return this.each(function(){
 			var M = $(this),
 				F = M.find('.'+S.filter.name)
-				C = M.find('.'+S.container.name),
+				C = M.find('.'+S.containers.name),
 				P = {
 					init: function(){
 						this._globals.init();
@@ -61,7 +61,7 @@
 								h: M.height()
 							},
 							A = F.find(S.filter.element),
-							E = C.find(S.container.element),
+							E = C.find(S.containers.element),
 							ED = {
 								w: E.outerWidth(true),
 								h: E.outerHeight(true)
