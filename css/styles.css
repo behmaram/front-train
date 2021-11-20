@@ -265,7 +265,7 @@ body {
 
 .blog h4 {
     text-decoration: none;
-    font:bold 14px IRANSans-web;
+    font: bold 14px IRANSans-web;
     color: #252525;
 }
 
@@ -287,6 +287,44 @@ body {
 
 .contact-us img {
     float: left;
-    margin: 20px ;
+    margin: 20px;
     border-radius: 3px;
+}
+
+.objImgFrame {
+    border: #000000 1px solid;
+    padding: 4px;
+    width: 50px;
+    float: right;
+}
+
+.cohort {
+    position: relative;
+    right: 40px;
+}
+
+#holder ul {
+    list-style: none;
+}
+
+#holder ul li {
+    float: right;
+    margin: 0 20px;
+}
+
+#leftNav, #rightNav {
+    position: absolute;
+    top: 22px;
+    font-size: 20px;
+}
+
+.simple_slider_hover {
+    cursor: pointer;
+    cursor: hand
+}
+
+.simple_slider_disabled {
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+    zoom: 1;
 }
