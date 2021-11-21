@@ -247,7 +247,7 @@ body {
 
 .text-section h3 {
     text-align: center;
-    font: bold 14px IRANSans-web;
+    font: bold 18px IRANSans-web;
     padding: 15px 0;
 }
 
@@ -327,4 +327,23 @@ body {
     opacity: 0.2;
     filter: alpha(opacity=20);
     zoom: 1;
+}
+
+.footer {
+   background: url(../images/footerback.jpg);
+    width: 960px;
+    height: 155px;
+    margin: 0 0 0 15px;
+    font:bold 14px IRANSans-web;
+    color: #a1a1a1;
+}
+
+
+.footer ul {
+    list-style: none;
+    top: 100px;
+}
+
+.footer ul li {
+    float: right;
 }
